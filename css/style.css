@@ -424,7 +424,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 
-/* Custom */
+/* *** Custom *** */
+/* INDEX */
 .affix{
     background-color: #fff;
 }
@@ -435,7 +436,7 @@ h1, h2, h3, h4, h5, h6, figure {
     color: #333;
 }
 .navbar .navbar-right{
-    width: 50%;
+    width: 40%;
 }
 .affix-top.navbar .navbar-right li a{
     color: #fff;
@@ -445,9 +446,207 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .navbar a.navbar-brand{
     color: #eca31c;
+    font-weight: bolder;
+}
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
+.title-body{
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 50px;
+}
+.carousel-caption h3{
+    color: #fff;
+}
+footer{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+footer p{
+    margin-bottom: 0px;
+    color: #333;
+}
+.bd-top-footer{
+    padding-top: 20px;
+    border-top: 1px solid #bbbdbf;
+}
+.title-footer{
+    color: #7f7f7f;
+}
+.nav>li>a.icon-social{
+  padding: 13px 10px;
 }
 
+/* INDEX */
 
+/* SINGLE */
+.single{
+  margin-top: 50px;
+}
+.single .title-top{
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+.single .title-single{
+  font-weight: 600;
+}
+.scrollToTop{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
+
+@media screen and (min-width: 768px){
+    .carousel-caption {
+        right: 0%;
+        left: 5%;
+    }
+    .carousel-caption{
+        text-align: left;
+    }
+}
+@media (min-width: 1200px){
+    .carousel-caption {
+        left: 15%;
+    }
+    .img-single img{
+      height: 521px;
+    }
+}
+
+#fh5co-header {
+  position: relative;
+  margin-bottom: 0;
+  z-index: 9999999;
+}
+
+.fh5co-cover,
+.fh5co-hero {
+  position: relative;
+  height: 800px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-cover,
+  .fh5co-hero {
+    height: 700px;
+  }
+}
+.fh5co-cover.fh5co-hero-2,
+.fh5co-hero.fh5co-hero-2 {
+  height: 600px;
+}
+.fh5co-cover.fh5co-hero-2 .fh5co-overlay,
+.fh5co-hero.fh5co-hero-2 .fh5co-overlay {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.fh5co-overlay {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(66, 64, 64, 0.9);
+  background: rgba(16, 15, 15, 0.15);
+}
+
+.fh5co-cover {
+  background-size: cover;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-cover {
+    heifght: inherit;
+    padding: 3em 0;
+  }
+}
+.fh5co-cover .btn {
+  padding: 1em 5em;
+  opacity: .9;
+}
+.fh5co-cover.fh5co-cover_2 {
+  height: 600px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-cover.fh5co-cover_2 {
+    heifght: inherit;
+    padding: 3em 0;
+  }
+}
+.fh5co-cover .desc {
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  margin-top: -80px;
+  z-index: 2;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-cover .desc {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.fh5co-cover .desc h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-weight: 300 !important;
+}
+.fh5co-cover .desc h2 strong {
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-cover .desc h2 {
+    font-size: 40px;
+  }
+}
+.fh5co-cover .desc span {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+.fh5co-cover .desc span a {
+  color: #fff;
+}
+.fh5co-cover .desc span a:hover, .fh5co-cover .desc span a:focus {
+  color: #fff !important;
+}
+.fh5co-cover .desc span a:hover.btn, .fh5co-cover .desc span a:focus.btn {
+  border: 2px solid #fff !important;
+  background: transparent !important;
+}
+.fh5co-cover .desc span a.fh5co-site-name {
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+/* SINGLE */
+/* End Custom */
 
 
 @media screen and (max-width: 1200px) {
