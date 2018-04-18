@@ -90,9 +90,7 @@
 				 bio = $('#fh5co-bio'),
 				 imgBg = $('.image-bg');
 
-
 			if (aside.hasClass('show')) {
-				
 				
 				if ($(window).width() <= 480 ) {
 					TweenLite.to(aside, -1, { 
@@ -105,21 +103,10 @@
 						ease: Power1.easeNone 
 					});
 				}
-				
-				TweenLite.to(grid, -1, { css: { 
-						"-webkit-transform" : "translate3d(0%, 0px, 0px)", 
-						"-moz-transform" : "translate3d(0%, 0px, 0px)", 
-						"-ms-transform" : "translate3d(0%, 0px, 0px)", 
-						"-o-transform" : "translate3d(0%, 0px, 0px)", 
-						"transform" : "translate3d(0%, 0px, 0px)"
-					}, 
-					ease: Power1.easeNone
-				});
 
 				TweenLite.to(bio, 1, { opacity: 0, delay: 0.2, ease: Power1.easeNone});
 				TweenLite.to(imgBg, 1, { opacity: 0, delay: 0.2, ease: Power1.easeNone});
 				
-
 				aside.removeClass('show');	
 			} else {
 
@@ -127,28 +114,6 @@
 					left: '0%',
 					ease: Power1.easeNone 
 				});
-
-				if ($(window).width() <= 480 ) {
-					TweenLite.to(grid, -1, { css: { 
-							"-webkit-transform" : "translate3d(85%, 0px, 0px)", 
-							"-moz-transform" : "translate3d(85%, 0px, 0px)", 
-							"-ms-transform" : "translate3d(85%, 0px, 0px)", 
-							"-o-transform" : "translate3d(85%, 0px, 0px)", 
-							"transform" : "translate3d(85%, 0px, 0px)" 
-						}, 
-						ease: Power1.easeNone
-					})
-				} else {
-					TweenLite.to(grid, -1, { css: { 
-							"-webkit-transform" : "translate3d(50%, 0px, 0px)", 
-							"-moz-transform" : "translate3d(50%, 0px, 0px)", 
-							"-ms-transform" : "translate3d(50%, 0px, 0px)", 
-							"-o-transform" : "translate3d(50%, 0px, 0px)", 
-							"transform" : "translate3d(50%, 0px, 0px)" 
-						}, 
-						ease: Power1.easeNone
-					});
-				}
 
 				TweenLite.to(bio, 1, { opacity: 1, delay: 0.3, ease: Power1.easeNone});
 				TweenLite.to(imgBg, 1, { opacity: 1, delay: 0.6, ease: Power1.easeNone});
@@ -167,22 +132,10 @@
 
 	}
 
-	var buttonsCustom = function() {
-		$('.btn-circle a').each(function(){
-			var $this = $(this),
-				span = $this.find('> span'),
-				em = $this.find('> em');
-
-			span.text(em.text());
-
-		})
-	}
-
 	$(function(){
 		contentWayPoint();
 		isotopeImageLoaded();
 		toggleAside();
-		buttonsCustom();
 	});
 
 	//Check to see if the window is top if not then display button

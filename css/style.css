@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
-.aside-toggle, .back-to-home {
+/*.aside-toggle, .back-to-home {
   position: fixed;
   top: 20px;
   left: 20px;
@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-}
+}*/
 .aside-toggle a, .back-to-home a {
   background: #000;
   font-size: 13px;
