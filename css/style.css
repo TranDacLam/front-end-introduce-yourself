@@ -68,11 +68,11 @@ h1, h2, h3, h4, h5, h6, figure {
   overflow-x: hidden;
 }
 
-#fh5co-aside {
+#fh5co-aside, #fh5co-contact-aside {
   position: fixed;
   left: 0;
   bottom: 0;
-  top: 0;
+  top: 50px;
   left: -50%;
   width: 50%;
   background: #000;
@@ -80,13 +80,13 @@ h1, h2, h3, h4, h5, h6, figure {
   color: gray;
   padding: 30px;
   z-index: 100;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-#fh5co-aside .image-bg {
+#fh5co-aside .image-bg, #fh5co-contact-aside .image-bg{
   opacity: 0;
   position: absolute;
   top: 0;
@@ -96,11 +96,11 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #000 url("../images/img_7.jpg") no-repeat;
   z-index: 1;
 }
-#fh5co-aside > .row {
+#fh5co-aside > .row, #fh5co-contact-aside > .row {
   z-index: 5;
   position: relative;
 }
-#fh5co-aside .overlay {
+#fh5co-aside .overlay, #fh5co-contact-aside .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -109,18 +109,18 @@ h1, h2, h3, h4, h5, h6, figure {
   background: rgba(0, 0, 0, 0.7);
   z-index: 2;
 }
-#fh5co-aside h2 {
+#fh5co-aside h2, #fh5co-contact-aside h2 {
   color: #fff;
 }
-#fh5co-aside #fh5co-aside-inner {
+#fh5co-aside #fh5co-aside-inner, #fh5co-contact-aside #fh5co-contact-aside-inner {
   height: 100%;
   position: relative;
 }
-#fh5co-aside #fh5co-bio {
+#fh5co-aside #fh5co-bio, #fh5co-contact-aside #fh5co-contact-bio{
   opacity: 0;
 }
 @media screen and (max-width: 480px) {
-  #fh5co-aside {
+  #fh5co-aside, #fh5co-contact-aside {
     left: -85%;
     width: 85%;
   }
