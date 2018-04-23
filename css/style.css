@@ -552,12 +552,6 @@ footer p{
   position: relative;
   height: 800px;
 }
-@media screen and (max-width: 768px) {
-  .fh5co-cover,
-  .fh5co-hero {
-    height: 700px;
-  }
-}
 .fh5co-cover.fh5co-hero-2,
 .fh5co-hero.fh5co-hero-2 {
   height: 600px;
@@ -590,24 +584,12 @@ footer p{
   background-size: cover;
   position: relative;
 }
-@media screen and (max-width: 768px) {
-  .fh5co-cover {
-    heifght: inherit;
-    padding: 3em 0;
-  }
-}
 .fh5co-cover .btn {
   padding: 1em 5em;
   opacity: .9;
 }
 .fh5co-cover.fh5co-cover_2 {
   height: 600px;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-cover.fh5co-cover_2 {
-    heifght: inherit;
-    padding: 3em 0;
-  }
 }
 .fh5co-cover .desc {
   top: 50%;
@@ -616,12 +598,6 @@ footer p{
   margin-top: -80px;
   z-index: 2;
   color: #fff;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-cover .desc {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 .fh5co-cover .desc h2 {
   color: #fff;
@@ -632,11 +608,6 @@ footer p{
 }
 .fh5co-cover .desc h2 strong {
   font-weight: 700;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-cover .desc h2 {
-    font-size: 40px;
-  }
 }
 .fh5co-cover .desc span {
   display: block;
@@ -659,6 +630,8 @@ footer p{
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 /* SINGLE */
+
+
 /* End Custom */
 
 
@@ -674,10 +647,60 @@ footer p{
     width: 50%;
   }
 }
+@media screen and (max-width: 768px) {
+  .fh5co-cover,
+  .fh5co-hero {
+    height: 700px;
+  }
+  .fh5co-cover {
+    height: inherit;
+    padding: 3em 0;
+  }
+  .fh5co-cover.fh5co-cover_2 {
+    height: inherit;
+    padding: 3em 0;
+  }
+  .fh5co-cover .desc {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .fh5co-cover .desc h2 {
+    font-size: 40px;
+  }
+  .navbar .navbar-right{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+    .navbar .navbar-header button.navbar-toggle{
+        border: 1px solid #333;
+    }
+    .navbar .navbar-header button.navbar-toggle .icon-bar{
+        background-color: #333;
+    }
+    .navbar-header{
+        background-color: #fff;
+    }
+    #myNavbar{
+        background-color: #fff;
+    }
+    .affix-top.navbar .navbar-right li a{
+        color: #333;
+    }
+    #myNavbar ul li.menu-social{
+        float: left;
+        margin-left: 8px;
+    }
+}
 @media screen and (max-width: 480px) {
   .grid-sizer,
   .grid-item {
     width: 50%;
+  }
+  footer .col-xs-5, .col-xs-4, .col-xs-3{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
   }
 }
 
